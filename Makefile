@@ -14,7 +14,7 @@ vagrant:
 # configuration avant l'export de l'image
 configure:
 	VBoxManage modifyvm $(name) --vram 128 --audio pulse --clipboard bidirectional --draganddrop bidirectional --mouse usbtablet --largepages on --pae off --x2apic on --graphicscontroller vboxsvga
-	VBoxManage storagectl $(name) --name IDE --add ide --controller PIIX4 || true
+#	VBoxManage storageattach $(name) --storagectl "SATA Controller" --type dvddrive --port 1 --medium emptydrive
 
 export:
 	VBoxManage export $(name) --output $(name).ova
