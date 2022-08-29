@@ -18,7 +18,9 @@ apt-get update
 apt-get --yes install virtualbox-guest-utils
 
 # Install graphical suite
-apt-get --yes install gnome gdm3
+apt-get --yes install \
+  gnome \
+  gdm3
 
 # Install discord
 wget -cq https://dl.discordapp.net/apps/linux/0.0.16/discord-0.0.16.deb
@@ -31,30 +33,46 @@ echo "deb https://download.sublimetext.com/ apt/stable/" > /etc/apt/sources.list
 apt-get --yes update
 apt-get --yes install sublime-text
 
-# Install some packages
+# Install base dev packages
 apt-get --yes install \
   build-essential \
   pkg-config \
   doxygen \
   git \
-  libglib2.0-0 \
-  libc++1 \
-  libmlv3 \
-  libmlv3-dev \
-  libsdl2-ttf-2.0-0 \
-  libsdl2-ttf-dev \
-  libsdl-gfx1.2-5 \
-  libsdl-image1.2 \
-  libsdl-mixer1.2 \
-  libsdl-ttf2.0-0 \
-  libsdl1.2debian \
-  libtool \
-  libxml2-dev \
-  libxml2-doc \
-  xml2
+  libtool
+
+# Outils unix
+apt-get --yes install \
+  tree
+
+# Python
+apt-get --yes install \
+  python3 \
+  thonny
 
 # Install for BDD
-apt-get --yes install php7.3 postgresql python3-flask
+apt-get --yes install \
+  php7.3 \
+  postgresql \
+  python3-flask
+
+# Prog C
+apt-get --yes install \
+  gcc \
+  clang \
+  vagrant \
+  gdb
+
+# Perf C
+apt-get --yes install \
+  libncurses-dev ncurses-doc
+
+# MLV
+apt-get --yes install \
+  libmlv3-dev \
+  libsdl-gfx1.2-dev libsdl1.2-dev libsdl-mixer1.2-dev \
+  libsdl-ttf2.0-dev libglib2.0-dev libxml2-dev \
+  libsdl-image1.2-dev
 
 # Cleanup
 apt-get --yes autoremove
