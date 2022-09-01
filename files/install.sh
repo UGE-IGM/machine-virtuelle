@@ -62,7 +62,7 @@ apt-get --yes install \
 apt-get --yes install \
   gcc \
   clang \
-  vagrant \
+  valgrind \
   gdb
 
 # Perf C
