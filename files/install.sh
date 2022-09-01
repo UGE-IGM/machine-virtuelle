@@ -48,7 +48,8 @@ apt-get --yes install \
 # Python
 apt-get --yes install \
   python3 \
-  thonny
+  thonny \
+  jupyter
 
 # Install for BDD
 apt-get --yes install \
