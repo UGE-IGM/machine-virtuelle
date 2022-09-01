@@ -55,7 +55,8 @@ apt-get --yes install \
 apt-get --yes install \
   php7.3 \
   postgresql \
-  python3-flask
+  python3-flask \
+  python3-passlib
 
 # Prog C
 apt-get --yes install \
