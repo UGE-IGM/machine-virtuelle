@@ -23,8 +23,8 @@ apt-get --yes install \
   gdm3
 
 # Install discord
-wget -cq https://dl.discordapp.net/apps/linux/0.0.16/discord-0.0.16.deb
-dpkg -i discord-0.0.16.deb
+wget -cq https://dl.discordapp.net/apps/linux/0.0.19/discord-0.0.19.deb
+dpkg -i discord-0.0.19.deb
 apt-get --yes --fix-broken install 
 
 # Install Sublimetext
